@@ -212,7 +212,9 @@ a{
   }
 /* Discord */
 /* This is an example, feel free to delete this code */
+
 .tooltip-container {
+    margin-bottom: 2vh;
     position: relative;
     background-color: #f47fff;
     cursor: pointer;
@@ -255,10 +257,10 @@ a{
   .tooltip {
     position: absolute;
     top: -2;
-    left: -45px; /* Altere a posição inicial para a esquerda, fora da tela */
+    left: -45px; 
     transform: translateX(
       -32%
-    ); /* Usando translateX para controlar a transição da esquerda para a direita */
+    ); 
     width: 160px;
     height: 52px;
     opacity: 0;
@@ -287,14 +289,14 @@ a{
     content: "";
     height: 0.6em;
     width: 0.6em;
-    right: -0.2em; /* Mude para a direita */
-    top: 50%; /* Altere o topo para o meio da tooltip */
-    transform: translateY(-50%) rotate(45deg); /* Use translateY para centralizar verticalmente */
+    right: -0.2em; 
+    top: 50%; 
+    transform: translateY(-50%) rotate(45deg); 
     background: var(--background);
   }
   
   .tooltip-container:hover .tooltip {
-    left: 100%; /* Altere para a posição desejada (a direita) */
+    left: 100%; 
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -340,6 +342,30 @@ a{
     text-align: center;
     font-size: 1rem;
     box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #000;
 }
 
 @media (min-width: 600px) {

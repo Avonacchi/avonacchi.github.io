@@ -48,59 +48,115 @@
             }
           </style>
     </div>
-    <h1>Bodycam Commands</h1>
-    <div class="neon-container">
-        <input type="text" id="textBox1" value="/me Takes out bodycam, attaches it to chest, checks its ballistic, water proof" readonly class="neon-input">
-        <button onclick="copyText('textBox1', this)" class="neon-button">Copy</button>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sections</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="collapsible-section">
+        <button class="collapsible">Bodycam Commands</button>
+        <div class="content">
+            <div class="neon-container">
+                <input type="text" id="textBox1" value="/me Takes out Bodycam and attaches Bodycam to chest and checks its ballistic, water proof." readonly class="neon-input">
+                <button onclick="copyText('textBox1', this)" class="neon-button">Copy</button>
+            </div>
+            <div class="neon-container">
+                <input type="text" id="textBox2" value="/do It is recording, bodycam is ballistic and waterproof" readonly class="neon-input">
+                <button onclick="copyText('textBox2', this)" class="neon-button">Copy</button>
+            </div>
+            <div class="neon-container">
+                <input type="text" id="textBox3" value="/me Connect PDA to nearby cell tower of FIB for criminal tracking." readonly class="neon-input">
+                <button onclick="copyText('textBox3', this)" class="neon-button">Copy</button>
+            </div>
+        </div>
     </div>
-    <div class="neon-container">
-        <input type="text" id="textBox2" value="/do It is recording, is ballistic and water proof" readonly class="neon-input">
-        <button onclick="copyText('textBox2', this)" class="neon-button">Copy</button>
+    <div class="collapsible-section">
+      <button class="collapsible">Refreshing</button>
+      <div class="content">
+          <div class="neon-container">
+              <input type="text" id="textBox6" value="/me refreshes bodycam" readonly class="neon-input">
+              <button onclick="copyText('textBox6', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+              <input type="text" id="textBox7" value="/do it is recording" readonly class="neon-input">
+              <button onclick="copyText('textBox7', this)" class="neon-button">Copy</button>
+          </div>
+      </div>
     </div>
-    <div class="neon-container">
-        <input type="text" id="textBox3" value="/me connects the PDA to the nearby cell tower of FIB" readonly class="neon-input">
-        <button onclick="copyText('textBox3', this)" class="neon-button">Copy</button>
+    <div class="collapsible-section">
+      <button class="collapsible">Saving Bodycam</button>
+      <div class="content">
+          <div class="neon-container">
+              <input type="text" id="textBox4" value="/me saves bodycam contents onto an SD then uploads SD to FIB cloud Servers using PDA." readonly class="neon-input">
+              <button onclick="copyText('textBox4', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox5" value="/do bodycam refreshes and continues recording" readonly class="neon-input">
+            <button onclick="copyText('textBox5', this)" class="neon-button">Copy</button>
+        </div>
     </div>
-    <h1>Refresh Commands</h1>
-    <div class="neon-container">
-        <input type="text" id="textBox4" value="/me refreshes bodycam" readonly class="neon-input">
-        <button onclick="copyText('textBox4', this)" class="neon-button">Copy</button>
+        
     </div>
-    <div class="neon-container">
-        <input type="text" id="textBox5" value="/do it is recording" readonly class="neon-input">
-        <button onclick="copyText('textBox5', this)" class="neon-button">Copy</button>
+      <div class="collapsible-section">
+        <button class="collapsible">Lawyer Commands</button>
+        <div class="content">
+            <div class="neon-container">
+                <input type="text" id="textBox8" value="/me Takes SSD out of the Bodycam and hands over to Lawyer" readonly class="neon-input">
+                <button onclick="copyText('textBox8', this)" class="neon-button">Copy</button>
+            </div>
+        </div>
     </div>
-    <h1>Saving Bodycam</h1>
-    <div class="neon-container">
-        <input type="text" id="textBox6" value="/me saves bodycam contents onto an SD then uploads SD to FIB cloud Servers using PDA." readonly class="neon-input">
-        <button onclick="copyText('textBox6', this)" class="neon-button">Copy</button>
+    <div class="collapsible-section">
+      <button class="collapsible">Extra Commands</button>
+      <div class="content">
+          <div class="neon-container">
+              <input type="text" id="textBox9" value="/me breaks trunk with crowbar." readonly class="neon-input">
+              <button onclick="copyText('textBox9', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox10" value="/me grabs universal size jumpsuit from behind the counter." readonly class="neon-input">
+            <button onclick="copyText('textBox10', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox11" value="/me looks up the VIN in the database for license plate and owner information" readonly class="neon-input">
+            <button onclick="copyText('textBox11', this)" class="neon-button">Copy</button>
+          </div>
+      </div>
     </div>
-    <div class="neon-container">
-        <input type="text" id="textBox7" value="/do bodycam refreshes and continues recording" readonly class="neon-input">
-        <button onclick="copyText('textBox7', this)" class="neon-button">Copy</button>
+    <div class="collapsible-section">
+      <button class="collapsible">UC Commands</button>
+      <div class="content">
+          <div class="neon-container">
+              <input type="text" id="textBox12" value="/me takes out bodycam and attaches it to belt, hides it, checks its ballistic and water proof" readonly class="neon-input">
+              <button onclick="copyText('textBox12', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox13" value="/do It is recording, is ballistic and water proof." readonly class="neon-input">
+            <button onclick="copyText('textBox13', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox14" value="/me connects PDA to the nearest cell tower" readonly class="neon-input">
+            <button onclick="copyText('textBox14', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox15" value="/me takes the FIB drone from the trunk and puts it in the backpack" readonly class="neon-input">
+            <button onclick="copyText('textBox15', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox16" value="/me launches the drone." readonly class="neon-input">
+            <button onclick="copyText('textBox16', this)" class="neon-button">Copy</button>
+          </div>
+          <div class="neon-container">
+            <input type="text" id="textBox17" value="/me takes the FIB drone from the ground and puts it in the backpack" readonly class="neon-input">
+            <button onclick="copyText('textBox17', this)" class="neon-button">Copy</button>
+          </div>
+      </div>
     </div>
-    <h1>Handing over SSD to Lawyer</h1>
-    <div class="neon-container">
-        <input type="text" id="textBox8" value="/me Takes SSD out of the Bodycam" readonly class="neon-input">
-        <button onclick="copyText('textBox8', this)" class="neon-button">Copy</button>
-    </div>
-    <div class="neon-container">
-        <input type="text" id="textBox9" value="/me Hands over bodycam SSD to the lawyer" readonly class="neon-input">
-        <button onclick="copyText('textBox9', this)" class="neon-button">Copy</button>
-    </div>
-    <h1>Additonal Commands</h1>
-    <div class="neon-container">
-        <input type="text" id="textBox10" value="/me breaks trunk with crowbar." readonly class="neon-input">
-        <button onclick="copyText('textBox10', this)" class="neon-button">Copy</button>
-    </div>
-    <div class="neon-container">
-        <input type="text" id="textBox11" value="/me grabs universal size jumpsuit from behind the counter." readonly class="neon-input">
-        <button onclick="copyText('textBox11', this)" class="neon-button">Copy</button>
-    </div>
-    <div class="neon-container">
-        <input type="text" id="textBox12" value="/me looks up the VIN in the database for license plate and owner information" readonly class="neon-input">
-        <button onclick="copyText('textBox12', this)" class="neon-button">Copy</button>
-    </div>
+    <!-- Repeat for other sections -->
 <script src="./script.js"></script>
 </body>
 </html>

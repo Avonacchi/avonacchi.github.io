@@ -1,15 +1,25 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+});
+
 function copyText(textBoxId, button) {
-    var copyText = document.getElementById(textBoxId);
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+    var textBox = document.getElementById(textBoxId);
+    textBox.select();
+    textBox.setSelectionRange(0, 99999); // For mobile devices
     document.execCommand("copy");
-
-    // Change button text to "Copied!"
-    var originalText = button.textContent;
-    button.textContent = "Copied!";
-
-    // Return to original text after 3-5 seconds
+    button.innerText = "Copied!";
     setTimeout(function() {
-        button.textContent = originalText;
-    }, 3000); // Change 3000 to 5000 for 5 seconds
+        button.innerText = "Copy";
+    }, 2000);
 }
