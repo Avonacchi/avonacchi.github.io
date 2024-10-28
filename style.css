@@ -16,6 +16,13 @@ a{
   text-decoration: none;
   color: #000
 }
+.warning{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #00ff00;
+  text-align: center;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+}
 .container {
     display: flex;
     flex-direction: column;
