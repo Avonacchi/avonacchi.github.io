@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="collapsible-section">
+        <button class="collapsible">Char Creator </button>
+        <div class="content">
+            <div class="neon-container">
+                <input type="text" id="textBox1" value="E-mail" class="neon-input">
+                <button onclick="copyText('textBox1', this)" class="neon-button">Copy</button>
+            </div>
+            <div class="neon-container">
+
+                <input type="text" id="textBox2" value="Username" class="neon-input">
+                <button onclick="copyText('textBox2', this)" class="neon-button">Copy</button>
+            </div>
+            <div class="neon-container">
+                <input type="text" id="textBox3" value="password" class="neon-input">
+                <button onclick="copyText('textBox3', this)" class="neon-button">Copy</button>
+            </div>
+            <div class="neon-container">
+                <input type="text" id="textBox4" value="RP Char Name" class="neon-input">
+                <button onclick="copyText('textBox4', this)" class="neon-button">Copy</button>
+            </div>
+            <div class="neon-container">
+                <input type="text" id="textBox5" value="RP Char Surnames" class="neon-input">
+                <button onclick="copyText('textBox5', this)" class="neon-button">Copy</button>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat for other sections -->
+    <script src="script.js"></script>
+</body>
+</html>
